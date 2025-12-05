@@ -9,4 +9,9 @@ foreach ($hobbies as $h) {
 /* tmb esten en el archivo que incluye no hace falta ponerlo aqui
 /*Con require dir enlazamos todo con todo
 */
+echo "<form method='post' action='comenzar.php?id=" . $filaUsuario['id'] .">";
+/*Para mantener la sesion de forma chapuza SOLO PARA ESTA PRUEBA DE MVC*/
+
+echo "<input type='submit' name='accion' value='modificarHobbies'>";
+echo "</form>";
 ?>
