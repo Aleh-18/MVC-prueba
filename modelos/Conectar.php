@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/configbd.php';
+require_once __DIR__ . '/../config/configbd.php';
 
 class Conectar {
     protected $conexion;

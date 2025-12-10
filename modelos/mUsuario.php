@@ -1,12 +1,12 @@
 <?php
-require_once __DIR__ . '/../config/Conectar.php';
-class Modelo {
+require_once __DIR__ . '/Conectar.php';
+class Modelo extends Conectar {
     protected $pdo;
 
     /*Conectar a la bd nada mas crear un Modelo*/
     public function __construct(){
-        $c = new Conectar();
-        $this->pdo = $c->conectar();
+        parent::__construct();/*llama al constructor padre*/
+        $this->pdo = $this->conectar();
     }
 
     public function validarIniciarSesion($correo, $contrasenia){

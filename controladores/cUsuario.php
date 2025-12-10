@@ -1,8 +1,13 @@
 <?php
-require_once __DIR__ . '/../modelos/Modelo.php';
+require_once __DIR__ . '/../modelos/mUsuario.php';
 
 /*En el controlador creamos clases y dentro de las calses creamos funciones sobre esea clase*/
 class Controlador { 
+
+    public function primeraVistaLogin(){
+        require __DIR__ . '/../vistas/iniciarSesion.html'; 
+    }
+
     public function funcionLogearse($usuario_id){
         
         /*Creamos un modelo y automaticamente conecta con la bd*/

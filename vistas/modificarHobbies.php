@@ -12,7 +12,7 @@ if (!empty($hobbiesdeUsuario)) {
 }
 
 // Formulario simple para cambiar hobbies (checkboxes abajo)
-echo "<form method='post' action='comenzar.php?id=" . $filaUsuario['id'] . "'>";
+echo "<form method='post' action='pGuardarHobbies.php?id=" . $filaUsuario['id'] . "'>";
 
 
 echo "<h3>Selecciona tus hobbies:</h3>";
@@ -23,6 +23,6 @@ foreach ($todosHobbies as $hobby) {
 }
 
 echo "<input type='submit' name='accion' value='guardarHobbies'>";
-echo " <a href='inicarSesion.html'>Cancelar</a>";
+echo " <a href='pLogin.php?id=" . $filaUsuario['id']. "'>Cancelar</a>";
 echo "</form>";
 ?>

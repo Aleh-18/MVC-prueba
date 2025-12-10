@@ -3,6 +3,8 @@ require_once __DIR__ . '/controladores/cUsuario.php';
 
 $controller = new Controlador();
 
-$controller->primeraVistaLogin();
+$id = $_GET['id'] ?? null;
+
+$controller->funcionLogearse($id);
 
 ?>
